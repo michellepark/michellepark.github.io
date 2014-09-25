@@ -1,0 +1,79 @@
+body {
+  background-image: url("http://wallpaperscraft.com/image/circles_glare_light_faded_46870_1920x1200.jpg?orig=3");
+}
+
+header {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: #E6E6E6;
+}
+
+a:hover {
+  color: #808081;
+}
+
+a:visited {
+  color: none;
+}
+
+.menu {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 20px;
+}
+
+p {
+  text-align: center;
+  color: #808081;
+}
+
+#name {
+  font-size: 75px;
+  font-family: Brush Script MT;
+  text-align: center;
+  color: #333333;
+}
+
+#picture {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 20px 50px 0 50px;
+  font-family: Papyrus;
+  color: #333333;
+}
+
+#project {
+  text-align: center;
+  padding: 50px;
+}
+
+.blog {
+  padding: 0 10px 0 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  font-color: black;
+}
+
+#license {
+  color: #000000;
+}
