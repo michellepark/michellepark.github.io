@@ -28,6 +28,8 @@ h1 {
 p {
   margin: 50px;
   padding: 0 200px 0 200px;
+  text-align: center;
+  color: #E6E6E6;
 }
 
 #blog {
