@@ -35,3 +35,15 @@ p {
 #blog {
   text-align: center;
 }
+
+a {
+  color: #E6E6E6;
+}
+
+a:hover {
+  color: #87CEFA;
+}
+
+a:visited {
+  color: none;
+}
