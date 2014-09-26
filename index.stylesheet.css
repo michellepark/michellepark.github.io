@@ -48,8 +48,14 @@ p {
   color: #333333;
 }
 
-#picture {
-  text-align: center;
+.profile {
+  border-radius: 50%;
+  height: 200px;
+  width: auto;
+  border: 2px solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -77,3 +83,4 @@ footer {
 #license {
   color: #000000;
 }
+
