@@ -32,8 +32,8 @@ p {
   color: #E6E6E6;
 }
 
-#blog {
-  text-align: center;
+.center {
+  text-align: left;
 }
 
 a {
