@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../blog-stylesheet.css">
+    <title> Michelle's blog </title>
+    <h1> Michelle's blog </h1>
+    </head>
+
+  <body>
+    <ul class="menu">
+      <li><a href="https://www.linkedin.com/in/michellexpark"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/linkedin.png"></a></li>
+      <li><a href="https://www.facebook.com/michellepark22"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/facebook.png"></a></li>
+      <li><a href="https://twitter.com/michellexpark"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/twitter.png"></a></li>
+      <li><a href="http://instagram.com/_michellepark"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/instagram.png"></a></li>
+      <li><a href="http://www.pinterest.com/michelleepark/"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/pinterest.png"></a></li>
+    </ul>
+
+    <h2>Enumerable #map</h2>
+
+    <p>Ah, enumerables. Wait what now? Yes I feel the exact same way. I'm here to teach you a little something about enumerables, and in the process I hope you can get less confused with me. <br><br>
+
+    Basically, an enumerable is just a bunch of methods packaged together that gets "mixed in" with other classes, like Arrays and Hashes. That means that a programmer can just write a method once, package them up as Enumerable, and tell Array or Hash to include them. Let's take a look at the #map enumerable as an example.<br><br>
+
+    #map (also known as #collect), returns a new array by performing some action on every item in the given collection: </p>
+
+    <p class=example>[1, 2, 3, 4].map {|x| x ** 2} <br>
+    => [1, 4, 9, 16] <br><br>
+
+    ["Aqua", "Bat", "Super", "Wonder Wo"].map {|adjective| adjective + "man"} <br>
+    => ["Aquaman", "Batman", "Superman", "Wonder Woman"] </p>
+
+    <p>When there is no block, the resulting array is the same as the given array: <br><br>
+
+    <p class=example>[1, 2, 3, 4].map <br>
+    => [1, 2, 3, 4]<br><br>
+
+    ["Aqua", "Bat", "Super", "Wonder Wo"].map <br>
+    => ["Aqua", "Bat", "Super", "Wonder Wo"] </p>
+
+    <p>When #map is used on a hash, each key/value pair is passed to the block. </p>
+
+    <p class=example>burgers = {"Big Mac" => 300, "Whopper with cheese" => 450, "Wendy's Double with cheese" => 320}
+
+    burgers.map {|sandwich, calories| calories / 2} <br>
+    => [160, 150, 225] </p>
+
+    <p>When there is no block, #map returns an array containing a set of two-item arrays, one for each key/value pair:</p>
+
+    <p class=example>burgers = {"Big Mac" => 300, "Whopper with cheese" => 450, "Wendy's Double with cheese" => 320} <br><br>
+
+    burgers.map <br>
+    => [["Wendy's Double with cheese", 320], ["Big Mac", 300], ["Whopper with cheese", 450]] </p>
+
+    <p id=footer>So that is the Enuerable #map(or #collect) in a nutshell. Much better than having to use a for loop, amirite?
+    </p>
+
+  </body>
+
+</html>
