@@ -38,6 +38,10 @@ p {
   color: #333333;
 }
 
+ol {
+  padding: 0 275px 0 275px;
+}
+
 .center {
   text-align: center;
 }
@@ -67,6 +71,5 @@ a:visited {
 }
 
 #footer {
-  margin-top: 25px;
   margin-bottom: 75px;
 }
