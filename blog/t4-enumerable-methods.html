@@ -17,11 +17,11 @@
 
     <h2>Enumerable #map</h2>
 
-    <p>Ah, enumerables. Wait what now? Yes I feel the exact same way. I'm here to teach you a little something about enumerables, and in the process I hope you can get less confused with me. <br><br>
+    <p>Ah, enumerables. Wait what now? Yes I feel the exact same way. I'm here to teach you a little something about enumerables, and in the process I hope you can get less confused with me.</p>
 
-    Basically, an enumerable is just a bunch of methods packaged together that gets "mixed in" with other classes, like Arrays and Hashes. That means that a programmer can just write a method once, package them up as Enumerable, and tell Array or Hash to include them. Let's take a look at the #map enumerable as an example.<br><br>
+    <p>Basically, an enumerable is just a bunch of methods packaged together that gets "mixed in" with other classes, like Arrays and Hashes. That means that a programmer can just write a method once, package them up as Enumerable, and tell Array or Hash to include them. Let's take a look at the #map enumerable as an example.</p>
 
-    #map (also known as #collect), returns a new array by performing some action on every item in the given collection: </p>
+    <p>#map (also known as #collect), returns a new array by performing some action on every item in the given collection:</p>
 
     <p class=example>[1, 2, 3, 4].map {|x| x ** 2} <br>
     => [1, 4, 9, 16] <br><br>
@@ -29,7 +29,7 @@
     ["Aqua", "Bat", "Super", "Wonder Wo"].map {|adjective| adjective + "man"} <br>
     => ["Aquaman", "Batman", "Superman", "Wonder Woman"] </p>
 
-    <p>When there is no block, the resulting array is the same as the given array: <br><br>
+    <p>When there is no block, the resulting array is the same as the given array:</p>
 
     <p class=example>[1, 2, 3, 4].map <br>
     => [1, 2, 3, 4]<br><br>
@@ -37,7 +37,7 @@
     ["Aqua", "Bat", "Super", "Wonder Wo"].map <br>
     => ["Aqua", "Bat", "Super", "Wonder Wo"] </p>
 
-    <p>When #map is used on a hash, each key/value pair is passed to the block. </p>
+    <p>When #map is used on a hash, each key/value pair is passed to the block.</p>
 
     <p class=example>burgers = {"Big Mac" => 300, "Whopper with cheese" => 450, "Wendy's Double with cheese" => 320}
 
@@ -51,8 +51,7 @@
     burgers.map <br>
     => [["Wendy's Double with cheese", 320], ["Big Mac", 300], ["Whopper with cheese", 450]] </p>
 
-    <p id=footer>So that is the Enuerable #map(or #collect) in a nutshell. Much better than having to use a for loop, amirite?
-    </p>
+    <p id="footer">So that is the Enuerable #map(or #collect) in a nutshell. Much better than having to use a for loop, amirite?</p>
 
   </body>
 
