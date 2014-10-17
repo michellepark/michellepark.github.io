@@ -17,39 +17,40 @@
 
     <h2>Ruby Classes</h2>
 
-    <p>Why use classes? Classes are the basic template from which object instances are created. Let's say you wanted to make a jukebox witha  bunch of songs. We can set up a Ruby class that represents things that are songs. Classes are defined using the class keyword followed by a name, which must begin with a capital letter. For example: <br><br>
+    <p>Why use classes? Classes are the basic template from which object instances are created. Let's say you wanted to make a jukebox witha  bunch of songs. We can set up a Ruby class that represents things that are songs. Classes are defined using the class keyword followed by a name, which must begin with a capital letter. For example:</p>
 
-    Class Song <br>
+    <p class="example">Class Song <br>
     end</p>
 
-    <p>Whenever Ruby creates a new object, it looks for a method named initialize and executes it, since a blank object is not very exciting:<br><br>
+    <p>Whenever Ruby creates a new object, it looks for a method named initialize and executes it, since a blank object is not very exciting:</p>
 
-    class Song <br>
-      def initialize(name, artist)<br>
-        @name = name <br>
-        @artist = artist <br>
-      end <br>
+    <p class="example">class Song <br>
+    &nbsp;&nbsp;def initialize(name, artist)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;@name = name <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;@artist = artist <br>
+    &nbsp;&nbsp;end <br>
     end </p>
 
     <p>For class Song, the initialize method takes 2 parameters: the name of the song and the artist. These just act like local variables within the method.</p>
 
     <p>Since each Song object needs to carry around its own song name and artist, we need to store these values as <em>instance variables</em> within the object. An instance variable is simply a name preceded by the "@" sign. In this case, the parameter <em>name</em> is assigned to the instance variable <em>@name</em> and the same goes for <em>artist</em>.</p>
 
-    <p>Classes are never closed: you can always add more methods to an existing class. Let's say you wanted to print the details:<br><br>
+    <p>Classes are never closed: you can always add more methods to an existing class. Let's say you wanted to print the details:</p>
 
-    class Song <br>
-      def initialize(title, artist)<br>
-        @title = title <br>
-        @artist = artist <br>
-      end <br><br>
+    <p class="example">class Song <br>
+    &nbsp;&nbsp;def initialize(title, artist)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;@title = title <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;@artist = artist <br>
+    &nbsp;&nbsp;end <br><br>
 
-      def details <br>
-        puts "#{title}" is playing by #{artist}.
-      end <br>
+    &nbsp;&nbsp;def details <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;puts "#{title}" is playing by #{artist}.<br>
+    &nbsp;&nbsp;end <br>
     end </p>
 
-    <p>So now if you called the class = Song.new("Out of the Woods", "Taylor Swift"), that would print: <br><br>
-    "Shake it Off" is playing by Taylor Swift.
+    <p>So now if you called the class = Song.new("Out of the Woods", "Taylor Swift"), that would print:</p>
+
+    <p class="example">&nbsp;&nbsp;"Shake it Off" is playing by Taylor Swift.
     </p>
 
     <p id="footer">Classes are useful if you want to build objects without having to repeat code. You can view it as sort of a blueprint for a working application. I hope this simple tutorial helped you understand classes a bit better; till next time!</p>
