@@ -15,7 +15,75 @@
       <li><a href="http://www.pinterest.com/michelleepark/"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/pinterest.png"></a></li>
     </ul>
 
-    <p> [insert blog here] </p>
+    <h1>Blocks, Procs, and Lambdas</h1>
+
+    <h2>Blocks</h2>
+
+    <p>This should come as no surprise, but we've been using blocks this whole time. A block of code is simply a piece of code that is passed through a method via the use of curly braces {...} or do...end syntax. For example:</p>
+
+    <p class="example">
+    &nbsp;&nbsp;&nbsp;&nbsp;[1, 2, 3].each {|x| puts x*2} <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;[1, 2, 3].each do |x| <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts x*2 <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;end</p>
+
+    <p>Very familiar right? So why do we need Procs and Lambdas? Let me try to explain.</p>
+
+    <h2>Procs</h2>
+
+    <p>As you can see, we have to retype blocks every time we want to reuse them, which can get tedious. Here's where Procs come in. We can store a block for later use in a Proc Object. Rewriting the above example as a Proc would look like the following:</p>
+
+    <p class="example">
+      &nbsp;&nbsp;&nbsp;&nbsp;double_num = Proc.new {|x| x*2} </p>
+
+    <p>If we called the Proc object:</p>
+
+    <p class="example">
+      &nbsp;&nbsp;&nbsp;&nbsp;[1, 2, 3].double_num.call(2) <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=> 4</p>
+
+    <p>Now we don't have to rewrite the block every time we want to pass the method.</p>
+
+    <h2>Lambdas</h2>
+
+    <p>Lambdas are nearly identical to Procs but have a couple key differences. First of all, a lambda checks for the number of arguments, whereas a proc does not:</p>
+
+    <p class="example">
+      &nbsp;&nbsp;&nbsp;&nbsp;l = lambda {"I'm a lambda"} <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;l.call <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=> "I'm a lambda" <br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;l.call("arg") <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=> ArgumentError: wrong number of arguments (1 for 0)</p>
+
+    <p>Secondly, the "return" keyword is treated differently by lambdas and procs. In a proc, a return statement halts the method, where lambdas allow them to continue:</p>
+
+    <p class="example">
+      &nbsp;&nbsp;&nbsp;&nbsp;def proc_math <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proc.new {return 1 + 1 }.call <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 2 + 2 <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;end <br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;def lambda_math <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lambda.new {return 1 + 1 }.call <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 2 + 2 <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;end <br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;proc_math # => 2<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;lambda_math # => 4</p>
+
+    <p>As you can see, the proc_math returns the value of the return statement inside the Proc, and the lambda_math skips the return statement and evaluates the value outside.</p>
+
+    <p>In summary, the main differences between Blocks, Procs, and Lambdas are:
+
+      <ul>
+        <li>Blocks are single use.</li>
+        <li>Procs are objects, blocks are not.</li>
+        <li>Lambdas have strict argument checking.</li>
+        <li>Procs and Lambdas treat "return" differently.</li>
+      </ul>
+    </p>
+
+    <p id="footer">So there you have it. A quick and easy guide to the world of blocks, procs, and lambdas!</p>
 
   </body>
 
