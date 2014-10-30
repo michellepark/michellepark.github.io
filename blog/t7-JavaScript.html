@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../blog-stylesheet.css">
+    <title> Michelle's blog </title>
+    <h1> Michelle's blog </h1>
+    </head>
+
+  <body>
+    <ul class="menu">
+      <li><a href="https://www.linkedin.com/in/michellexpark"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/linkedin.png"></a></li>
+      <li><a href="https://www.facebook.com/michellepark22"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/facebook.png"></a></li>
+      <li><a href="https://twitter.com/michellexpark"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/twitter.png"></a></li>
+      <li><a href="http://instagram.com/_michellepark"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/instagram.png"></a></li>
+      <li><a href="http://www.pinterest.com/michelleepark/"><img src="https://raw.githubusercontent.com/michellepark/michellepark.github.io/master/icons/pinterest.png"></a></li>
+    </ul>
+
+    <h1>Ruby vs. Javascript</h1>
+
+    <p>Programming languages tend to be similar, but no two are ever alike. Here, I'll demonstrate some of the key differences between Ruby and Javascript.</p>
+
+    <h2>Syntax</h2>
+
+    <p>One of the first things you'll notice is how different the syntax is between the two. For example: in Ruby, you use two equal signs to determine if two objects are the exact same object. In Javascript, however, three is used: 2 == 2 vs. 2 === 2. Javascript does have its own double equals sign, but that only determines whether the two values match, not if they're <em>equal</em>.</p>
+
+    <p>Another slight difference is incrementing. In both Ruby and Javascript, you can use x += 1 to increment by one. In Javascript though, there is a shorter method that you can use as well: ++ or -- (x++ increments by 1).</p>
+
+    <h2>Methods and Functions</h2>
+
+    <p>Functions in Javascript are the same as methods in Ruby. Again, the syntax is different:</p>
+
+    <p>Ruby:</p>
+
+    <p class="example">
+    &nbsp;&nbsp;&nbsp;&nbsp;def hello <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "hello" <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;end
+    </p>
+
+    <p>Javascript:</p>
+
+    <p class="example">
+    &nbsp;&nbsp;&nbsp;&nbsp;function hello() { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("hello"); <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+
+    <p>In Javascript, semicolons are used to mark the end of a statement. They are generally required, whereas in Ruby they are not. Also, the "console.log" is equivalent to "puts".</p>
+
+    <h2>Hashes and Objects</h2>
+
+    <p>Objects in Javascript are comparable to hashes in Ruby. They are used to organize key/value pairs:</p>
+
+    <p class="example">
+    &nbsp;&nbsp;&nbsp;&nbsp;cat = {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type :Scottish Fold, <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name :Meredith,
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color :grey and white
+    &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+
+     <p class="example">
+    &nbsp;&nbsp;&nbsp;&nbsp;var cat = {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: "Scottish Fold"; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: "Meredith";
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: "grey and white"
+    &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+
+    <p>In order to access a hash in Ruby, you'd write cat[name] => "Meredith". In Javascript, you just call cat.name => "Meredith". Also, notice how you have to declare the cat variable in Javascript with the word var.</p>
+
+    <p id="footer">So I hope this was helpful in highlighting some of the important differences between Ruby and Javascript!</p>
+
+  </body>
+
+</html>
