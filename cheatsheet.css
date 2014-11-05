@@ -1,0 +1,85 @@
+body {
+  background-image: url("http://chomsky.soc.cornell.edu/~marty/plasma-turbulence-web-background.jpg");
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #333333;
+  font-family: cursive;
+}
+
+.menu {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333333;
+  margin: none;
+}
+
+h3 {
+  text-align: center;
+  color: #333333;
+  margin: none;
+}
+
+p {
+  padding: 0 200px 0 200px;
+  text-align: center;
+  color: #333333;
+}
+
+ol {
+  padding: 0 275px 0 275px;
+}
+
+ul {
+  padding: 0 275px 0 275px;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  color: #0099FF;
+}
+
+a:hover {
+  color: #9966FF;
+}
+
+a:visited {
+  color: none;
+}
+
+.pix {
+  height: 250px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.example {
+  color:  #7A52CC;
+}
+
+#footer {
+  margin-bottom: 75px;
+}
